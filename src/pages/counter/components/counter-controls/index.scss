@@ -1,0 +1,6 @@
+.counter-controls {
+  @apply flex gap-4 bg-slate-900 shadow-slate-900 shadow-xl rounded-[28px] p-4;
+  &__btn {
+    @apply bg-orange-600 rounded-2xl w-16 h-16 text-white text-4xl font-bold;
+  }
+}

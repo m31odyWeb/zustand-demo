@@ -1,0 +1,25 @@
+.post {
+  display: grid;
+  grid-template-areas: 'u t' 'b b';
+  grid-template-columns: 50px 85fr;
+  grid-template-rows: 50px auto;
+  @apply gap-3 p-4 bg-slate-900 bg-opacity-50 rounded-2xl shadow-slate-900 shadow-lg;
+
+  &__user {
+    grid-area: u;
+    @apply flex items-center justify-center rounded-lg text-xl font-bold text-slate-900 bg-orange-600;
+  }
+
+  &__title {
+    grid-area: t;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @apply text-white text-lg font-bold self-center first-letter:uppercase;
+  }
+
+  &__body {
+    grid-area: b;
+    @apply text-orange-300 text-sm  first-letter:uppercase;
+  }
+}

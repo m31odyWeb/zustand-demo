@@ -1,0 +1,30 @@
+.posts {
+  max-height: 100vh;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-orange-600 rounded-sm;
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  &__heading {
+    @apply text-5xl text-orange-600 text-right sticky top-0 font-bold p-6 backdrop-blur-lg;
+  }
+  &__body {
+    @apply m-4;
+  }
+  &__loader {
+    @apply fixed w-screen h-screen;
+  }
+  &__list {
+    & > :nth-child(n) {
+      @apply mb-5;
+    }
+  }
+}

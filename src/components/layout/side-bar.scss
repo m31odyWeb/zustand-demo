@@ -1,0 +1,13 @@
+.nav {
+  @apply text-3xl text-orange-300 font-semibold;
+  &__list-item {
+    @apply py-1;
+  }
+
+  &__list-link {
+    @apply transition-all hover:pl-2;
+    &.active {
+      @apply transition-all text-orange-600;
+    }
+  }
+}

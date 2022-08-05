@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  grid-template: 100vh / 300px calc(100vw - 300px);
+  max-height: 100vh;
+  max-width: 100vw;
+  &__sidebar {
+    @apply p-4 bg-slate-900 shadow-right;
+  }
+  &__content {
+    overflow: auto;
+  }
+}

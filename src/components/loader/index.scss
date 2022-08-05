@@ -1,0 +1,10 @@
+.loader {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  & > svg {
+    width: 128px;
+    height: 128px;
+    stroke: rgb(284, 28, 12);
+  }
+}
